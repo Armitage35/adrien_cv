@@ -1,12 +1,15 @@
-
 body {
   margin-bottom: 0px;
   background-color: #f7f7f7;
 }
 
+.row {
+  margin-left: 0px;
+}
+
 .language {
   margin-bottom: 5px;
-  font-family: 'Noto Serif';
+  font-family: 'Noto Serif', 'Times New Roman', Times, serif;
   display: inline;
 }
 
@@ -38,6 +41,7 @@ button {
 .speech {
   margin-bottom: 5px;
   font-size: 18px;
+  padding-right: 0px
 }
 
 .cv {
@@ -47,7 +51,7 @@ button {
 
 .workAssociative {
   text-align: right;
-  max-width: 45%;
+  /* max-width: 45% */;
   padding: 0% 2%;
 }
 
@@ -58,7 +62,7 @@ button {
 
 h1 {
   color: #f59628;
-  font-family: 'Oswald', "Trebuchet MS", Helvetica, sans-serif;
+  font-family: 'Oswald', 'Trebuchet MS', Helvetica, sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   font-size: 90px;
@@ -67,7 +71,7 @@ h1 {
 
 h2 {
   color: #f59628;
-  font-family: 'Oswald';
+  font-family: 'Oswald', 'Trebuchet MS', Helvetica, sans-serif ;
   text-transform: uppercase;
   margin-bottom: 5px;
   margin-top: 5px;
@@ -75,7 +79,7 @@ h2 {
 }
 
 h3 {
-  font-family: 'Oswald';
+  font-family: 'Oswald', 'Trebuchet MS', Helvetica, sans-serif;
   text-transform: uppercase;
   border-style: solid;
   border-width: 5px 0px;
@@ -88,19 +92,19 @@ h3 {
 }
 
 p {
-  font-family: 'Noto Serif';
+  font-family: 'Noto Serif', 'Times New Roman', Times, serif;
   flex-wrap: wrap;
 }
 
 a {
-  font-family: 'Noto Serif';
+  font-family: 'Noto Serif', 'Times New Roman', Times, serif;
   text-decoration: underline;
   color: black;
 }
 
 .intro {
   font-weight: bold;
-  font-family: 'Oswald';
+  font-family: 'Oswald', 'Trebuchet MS', Helvetica, sans-serif;
   margin-bottom: 0px;
   margin-top: 10px;
   font-size: 20px;
@@ -151,9 +155,19 @@ i {
   font-size: 30px;
   padding: 10px;
   width: 80%;
-  font-family: 'Oswald';
+  font-family: 'Oswald', 'Trebuchet MS', Helvetica, sans-serif;
 }
 
 .country {
   color: #979797;
+}
+
+@media only screen and (max-width: 500px) {
+    .verticalHr {
+      display:none;
+    }
+    
+    .workAssociative {
+      text-align: left;
+    }
 }
